@@ -10,8 +10,11 @@ android {
         applicationId "alpha.a9dev.team.safetyroadhelper"
         minSdkVersion 21
         targetSdkVersion 28
+        multiDexEnabled true
+
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -30,4 +33,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Avoid the 64K limit
+    implementation 'com.android.support:multidex:1.0.3'
 }
