@@ -25,7 +25,8 @@
         <activity android:name=".ActivityMain" />
         <activity
             android:name=".ActivityPermission"
-            android:theme="@android:style/Theme.Dialog"/>
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".ActivityLogin"></activity>
     </application>
 
 </manifest>
